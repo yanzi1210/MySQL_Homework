@@ -77,8 +77,7 @@ SET first_name = 'Groucho'
 WHERE First_name = "HARPO" AND last_name = "Williams";
 
 -- 5a. You cannot locate the schema of the address table. Which query would you use to re-create it?
-USE Schema;
-DROP Table address IF exists;
+DROP Table IF exists address;
 CREATE Table address;
 
 -- 6a. Use JOIN to display the first and last names, as well as the address,
